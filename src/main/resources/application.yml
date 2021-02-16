@@ -17,14 +17,14 @@ spring:
     database: mysql
     properties.hibernate.dialect: org.hibernate.dialect.MySQL5InnoDBDialect
     hibernate:
-      ddl-auto: create
+      ddl-auto: none
     show-sql: true
     properties:
       hibernate.format_sql: true
   datasource:
     url: jdbc:mysql://localhost:3306/oauth2?useSSL=false&serverTimezone=UTC
     username: root
-    password:
+    password: cw8904
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 # Init
@@ -42,7 +42,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/oauth2?useSSL=false&serverTimezone=UTC
     username: root
-    password:
+    password: cw8904
     driver-class-name: com.mysql.cj.jdbc.Driver
     initialization-mode: always
     platform: oauth2
